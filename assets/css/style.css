@@ -7,6 +7,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 /*
 1. Từ ngoài vào trong
@@ -29,7 +30,48 @@ html {
     color: #fff !important;
 }
 
-#wrapper {
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 11px 16px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
 }
 
 #header {
@@ -106,10 +148,6 @@ html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#nav .subnav li {
-    /* width: 100%; */
-}
-
 #nav .subnav a {
     color: black;
     padding: 0 12px;
@@ -143,13 +181,9 @@ html {
     font-size: 15px;
 }
 
-#content {
-
-}
-
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 
@@ -165,9 +199,42 @@ html {
 #content .content-slogan {
     font-size: 15px;
     text-align: center;
-    margin-top: 25px;
+    margin: 25px 0;
     font-style: italic;
     opacity: 0.6;
+}
+
+#content .content-body {
+    padding: 32px 0;
+}
+
+#content .content-left {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content-left i[class*="fas"] {
+    width: 30px;
+}
+
+.content-right .form-control {
+    font-size: 15px;
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.content-right .message {
+    padding: 8px 0;
+}
+
+.content-right #send-btn {
+    float: right;
+}
+
+.content-right #send:hover {
+    color: #000;
+    background-color: #ccc;
 }
 
 #content .about-text {
@@ -280,24 +347,6 @@ html {
     line-height: 1.4;
 }
 
-.place-content .buy-btn {
-    background-color: #000;
-    color: #fff;
-    padding: 11px 16px;
-    text-decoration: none;
-    display: inline-block;
-    border: none;
-}
-
-.place-content .buy-btn:hover {
-    background-color: #ccc;
-    color: #000;
-}
-
-#footer {
-
-}
-
 .modal {
     position: fixed;
     right: 0;
@@ -403,4 +452,36 @@ html {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.map-section > img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-link {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer .social-link a {
+    color: #000;
+    font-size: 24px;
+}
+
+#footer .social-link a:hover {
+    opacity: 0.5    ;
+}
+
+#footer p {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#footer p a {
+    color: #000;
 }

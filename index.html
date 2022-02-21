@@ -15,19 +15,19 @@
         <div id="header">
             <!-- Nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#content">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="fas fa-sort-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>    
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>    
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -81,7 +81,7 @@
             </div>
 
             <!-- TOUR section -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="content-heading text-white">TOUR DATES</h2>
         
@@ -101,7 +101,7 @@
                                 <h3 class="place">New York</h3>
                                 <p class="time">Fri 27 Nov 2016</p>
                                 <p class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-btn js-buy-btn">Buy Tickets</button>
+                                <button class="btn js-buy-btn">Buy Tickets</button>
                             </div>
                          </div>
 
@@ -111,7 +111,7 @@
                                 <h3 class="place">Paris</h3>
                                 <p class="time">Sat 28 Nov 2016</p>
                                 <p class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-btn js-buy-btn">Buy Tickets</button>
+                                <button class="btn js-buy-btn">Buy Tickets</button>
                             </div>
                          </div>
 
@@ -121,7 +121,7 @@
                                 <h3 class="place">San Francisco</h3>
                                 <p class="time">Sun 29 Nov 2016</p>
                                 <p class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-btn js-buy-btn">Buy Tickets</button>
+                                <button class="btn js-buy-btn">Buy Tickets</button>
                             </div>
                          </div>
                          
@@ -130,17 +130,58 @@
                 </div>
             </div>
 
-            <!-- CONTACT section -->
-            <div class="content-section">
+            <!-- Begin: CONTACT section -->
+            <div id="contact" class="content-section">
                 <h2 class="content-heading">CONTACT</h2>
     
-                 <p class="content-slogan">Fan? Drop a note!</p>
+                <p class="content-slogan">Fan? Drop a note!</p>
+                <div class="row content-body">
+                    <div class="col col-half content-left">
+                        <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+                        <p><i class="fas fa-phone-alt"></i>Phone: +00 151515</p>
+                        <p><i class="fas fa-envelope"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half content-right">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" required name="" id="" placeholder="Name" class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" required name="" id="" placeholder="Email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row message">
+                                <div class="col col-full">
+                                    <input type="text" required name="" id="" placeholder="Message" class="form-control">
+                                </div>
+                            </div>
+                            <input id="send-btn" class="btn" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
+            <!-- End: CONTACT section -->
 
-        <div id="footer">
-            
+            <!-- Begin: MAP section -->
+            <div class="map-section">
+                <img src="assets/img/map.jpg" alt="Map">
+            </div>
+            <!-- End: MAP section -->
         </div>
+        <!-- Begin: Footer -->
+        <div id="footer">
+            <div class="social-link">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-snapchat"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="source-page">Powered by <a href="">w3.css</a></p>
+        </div>
+        <!-- End: Footer -->
     </div>
 
     <div class="modal js-modal">
