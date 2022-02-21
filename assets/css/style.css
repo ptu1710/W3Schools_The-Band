@@ -1,14 +1,3 @@
-/* PC: >= 1024px
-    Tablet: >= 740px && < 1024px
-    Mobile: < 740px
-*/
-
-/* Tablet */
-@media (min-width: 740px) and (max-width: 1023px)
-{
-
-}
-
 /* Reset CSS */
 * {
     padding: 0;
@@ -93,6 +82,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav {
@@ -133,16 +123,26 @@ html {
     right: 12%;
 }
 
+#header .mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu,
 #header .search {
     float: right;
 }
 
+#header .menu-bar,
 #header .header-search-btn {
     color: white;
     line-height: 46px;
     padding: 0 23px;
 }
 
+#header .mobile-menu:hover,
 #header .header-search-btn:hover {
     background-color: rgb(244, 67, 54);
     cursor: pointer;
@@ -495,4 +495,40 @@ html {
 
 #footer p a {
     color: #000;
+}
+
+/* PC: >= 1024px
+    Tablet: >= 740px && < 1024px
+    Mobile: < 740px
+*/
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px)
+{
+
+}
+
+/* Mobile */
+@media (max-width: 740px)
+{
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #header .header-search-btn
+    {
+        display: none;
+    }
+    
+    #header .mobile-menu {
+        display: block;
+    }
 }
