@@ -1,3 +1,14 @@
+/* PC: >= 1024px
+    Tablet: >= 740px && < 1024px
+    Mobile: < 740px
+*/
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px)
+{
+
+}
+
 /* Reset CSS */
 * {
     padding: 0;
@@ -183,10 +194,10 @@ html {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0 112px;
+    max-width: 100%;
+    padding: 64px 16px 112px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 #content .content-heading {
@@ -240,7 +251,7 @@ html {
 #content .about-text {
     font-size: 15px;
     text-align: justify;
-    line-height: 1.4;
+    line-height: 1.5;
     margin-top: 25px;
     margin-bottom: 15px;
 }
